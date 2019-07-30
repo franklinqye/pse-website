@@ -1,0 +1,13 @@
+
+@import '../../shared-styles/variables';
+
+.background {
+  background: $grey-light;
+  min-height: 300px;
+  padding: 120px 0;
+}
+
+.fullscreen {
+  min-height: 90vh;
+  background: none;
+}

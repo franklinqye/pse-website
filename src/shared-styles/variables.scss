@@ -1,0 +1,42 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+$content-width: 500px;
+$padding: 15px;
+
+// COLOR VARIABLES:;
+$purple-bold: #774699;
+$purple-medium: #916CB7;
+$purple-light: #AC94D2;
+$grey-medium: #F2F2F2;
+$grey-light: #F8F8F8;
+$dark: #342E39;
+$translucent-purple: rgba(36, 26, 43, 0.51);
+
+%fonts {
+  font-family: "Avenir Next";
+}
+
+h1 {
+  @extend %fonts;
+  font-weight: Bold;
+  font-size: 68px;
+}
+
+h2 {
+  @extend %fonts;
+  font-weight: Bold;
+  font-size: 28px;
+}
+
+h3 {
+  @extend %fonts;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+p {
+  @extend %fonts;
+  font-weight: 400;
+  font-size: 20px;
+}
+
