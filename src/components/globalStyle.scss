@@ -1,0 +1,12 @@
+// Import Bootstrap and its default variables
+// @import '~bootstrap/scss/bootstrap.scss';
+
+
+:global { 
+  // @import 'bootstrap/dist/css/bootstrap';
+  
+}
+
+:global(.test) {
+  background: red;
+}
