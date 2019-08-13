@@ -22,16 +22,25 @@ function BlockContent(props) {
     innerClassName += ` ${styles["container"]}`;
   }
 
-  return (
+  var coreContent = (
     <div 
-      className={`${centerClassName} ${styles["background"]} ${fullscreen && styles["fullscreen"]} `}
-      style={ styleObj }
+      className={`${centerClassName} ${styles["background"]} ${fullscreen && styles["fullscreen"]} ${background && styles["bg-tint"]} `}
       >
       <div className={innerClassName}>
         { children }
           </div>
     </div>
   );
+
+  if (background) {
+    coreContent = (
+      <div style={ styleObj }>
+        { coreContent }
+      </div>
+    )
+  }
+
+  return coreContent;
 }
 
 export default BlockContent;

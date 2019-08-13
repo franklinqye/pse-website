@@ -3,7 +3,6 @@
 
 .parent {
   border: none;
-  color: $grey-light;
   min-width: 225px;
   height: 50px;
   display: flex;
@@ -16,10 +15,12 @@
 
 .light {
   background: $grey-medium;
+  color: $grey-dark;
 }
 
 .dark {
   background: $dark;
+  color: $grey-light;
 }
 
 a {

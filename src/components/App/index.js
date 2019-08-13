@@ -1,18 +1,17 @@
 import React, { PropTypes } from 'react';
 import Link from 'react-router/lib/Link';
 import styles from './styles.scss';
+import Footer from '../Footer';
 
-function App({ children, navBar }) {
+function App(props) {
+  const { children } = props;
   return (
     <div>
-      {navBar && 
-        <div>
-          {navBar}
-          </div>
-        }
-      <div className={" "}>
-        {children}
-      </div>
+      {/*NavBar*/}
+
+      {children}
+
+      <Footer/>
     </div>
   );
 }

@@ -22,13 +22,14 @@ function Tools() {
 
   return (
     <div>
-      <BlockContent fullscreen={true} background={'banquetS19.png'}>
+      <BlockContent fullscreen={true} background={'pmts.png'}>
         <h1 style={{color: "white"}}>
           Pi Sigma Epsilon
         </h1>
         <h3 className={styles["text-center"]} style={{color: "white"}}>
           UC Berkeley’s Marketing & Business Fraternity
         </h3>
+        <Button overrideStyles={{fontWeight: "500", marginTop:"64px"}} background="light">Fall Rush 2019</Button>
       </BlockContent>
       <BlockContent widthStyle="loose">
         <Letter dataIDs={data.letter.dataIDs} data={data.letter.data}/>
@@ -62,9 +63,9 @@ function Tools() {
         </div>
         <Button overrideStyles={{fontWeight: "Bold", marginTop: "50px"}}>LEARN MORE</Button>
       </BlockContent>
-      <BlockContent fullscreen={true} background={'satherGate.png'}>
+      <BlockContent fullscreen={true} background={'citySunset.png'}>
         <h1 style={{color: "white"}}>
-          Were We Go
+          Where We Go
         </h1>
       </BlockContent>
       <BlockContent>
